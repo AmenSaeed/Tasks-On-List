@@ -29,7 +29,7 @@ def markComplete():
 
 def viewTask():
     for i,task in enumerate(lst):
-        print(f"""{i + 1}. {task["Task"]} {"Finished \nWell Done✔️" if task["Completed"] == True  else "Not Yet"}""")
+        print(f"""{i + 1}. {task["Task"]} {"✔️" if task["Completed"] == True  else "❌"}""")
     print('-'* 30)
 
 while True:
